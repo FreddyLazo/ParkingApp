@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ParkingApp</string>
+    <string name="title_activity_base_activity">BaseActivity</string>
+    <string name="text_parking_problem">¿Tiene problemas para encontrar un lugar seguro para aparcar su coche?</string>
+    <string name="text_parking_safe">La aplicación de estacionamiento le ayudará a localizar un lugar seguro para su automóvil</string>
+</resources>

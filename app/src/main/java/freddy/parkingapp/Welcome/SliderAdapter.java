@@ -25,7 +25,7 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 1;
+        return 3;
     }
 
     @Override
@@ -44,7 +44,12 @@ public class SliderAdapter extends PagerAdapter {
         switch (position){
             case 0:
                 imageSlider.setImageResource(R.drawable.image_parking);
-                textSlider.setText(R.string.app_name);
+                textSlider.setText(R.string.text_parking_safe);
+            case 2 :
+                imageSlider.setImageResource();
+                textSlider.setText(R.string.text_parking_problem);
+
+                break;
         }
         return v;
     }
