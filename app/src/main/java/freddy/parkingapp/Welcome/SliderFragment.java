@@ -1,4 +1,4 @@
-package freddy.parkingapp.Welcome;
+package freddy.parkingapp.welcome;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,6 +21,10 @@ public class SliderFragment extends BaseFragment {
 
     @BindView(R.id.slider_pager)
     ViewPager sliderPager;
+    SliderAdapter adapter;
+
+    public SliderFragment() {
+    }
 
     @Nullable
     @Override
@@ -33,6 +37,7 @@ public class SliderFragment extends BaseFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        adapter = new SliderAdapter(ctx);
+        sliderPager.setAdapter(adapter);
     }
 }

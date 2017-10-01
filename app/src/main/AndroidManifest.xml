@@ -19,7 +19,7 @@
             android:name=".BaseActivity"
             android:label="@string/title_activity_base_activity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Welcome.WelcomeActivity"/>
+        <activity android:name=".welcome.WelcomeActivity"/>
     </application>
 
 </manifest>

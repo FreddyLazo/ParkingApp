@@ -1,4 +1,4 @@
-package freddy.parkingapp.Welcome;
+package freddy.parkingapp.welcome;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -39,9 +39,12 @@ public class SliderAdapter extends PagerAdapter {
         View v = layoutInflater.inflate(R.layout.welcome_slider_raw, container,false);
         ImageView imageSlider = (ImageView) v.findViewById(R.id.image_slider);
         TextView textSlider = (TextView) v.findViewById(R.id.text_slider);
+        container.addView(v);
+
         switch (position){
             case 0:
-                imageSlider.setImageResource();
+                imageSlider.setImageResource(R.drawable.image_parking);
+                textSlider.setText(R.string.app_name);
         }
         return v;
     }

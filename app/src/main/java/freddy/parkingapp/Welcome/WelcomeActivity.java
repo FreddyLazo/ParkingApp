@@ -1,4 +1,4 @@
-package freddy.parkingapp.Welcome;
+package freddy.parkingapp.welcome;
 
 
 import android.os.Bundle;
@@ -23,6 +23,14 @@ public class WelcomeActivity extends BaseActivity {
 
     private void initSliderFragment() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction ft = fragmentManager.beginTransaction();
+        SliderFragment sliderFragment = (SliderFragment) fragmentManager.findFragmentByTag("welcomeSliderFragment");
+        if(sliderFragment==null){
+            FragmentTransaction ft = fragmentManager.beginTransaction();
+            sliderFragment = new SliderFragment();
+            ft.replace(R.id.fragment_container,sliderFragment);
+            ft.addToBackStack("welcomeSliderFragment");
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+            ft.commit();
+        }
     }
 }
