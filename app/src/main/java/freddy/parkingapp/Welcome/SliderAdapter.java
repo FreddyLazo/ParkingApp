@@ -45,10 +45,14 @@ public class SliderAdapter extends PagerAdapter {
             case 0:
                 imageSlider.setImageResource(R.drawable.image_parking);
                 textSlider.setText(R.string.text_parking_safe);
+                break;
             case 2 :
-                imageSlider.setImageResource();
+                imageSlider.setImageResource(R.drawable.image_parking_1);
                 textSlider.setText(R.string.text_parking_problem);
-
+                break;
+            case 3:
+                imageSlider.setImageResource(R.drawable.image_parking_2);
+                textSlider.setText(R.string.text_parking_problem);
                 break;
         }
         return v;
