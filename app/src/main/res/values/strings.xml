@@ -3,4 +3,5 @@
     <string name="title_activity_base_activity">BaseActivity</string>
     <string name="text_parking_problem">Do you have problems to find a secure place to park your car?</string>
     <string name="text_parking_safe">Parking app help you to locate a safe place to your car</string>
+    <string name="text_parking_problem_2">Tired of having your car stolen or damaged</string>
 </resources>

@@ -4,4 +4,5 @@
     <string name="title_activity_base_activity">BaseActivity</string>
     <string name="text_parking_problem">¿Tiene problemas para encontrar un lugar seguro para aparcar su coche?</string>
     <string name="text_parking_safe">La aplicación de estacionamiento le ayudará a localizar un lugar seguro para su automóvil</string>
+    <string name="text_parking_problem_2">Cansado de que te roben o rayen el carro</string>
 </resources>

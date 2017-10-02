@@ -8,23 +8,27 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Window;
+import android.view.WindowManager;
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     private String TAG ;
     private Context ctx;
     private ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+/*
         TAG = BaseActivity.this.getClass().getSimpleName();
+*/
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         ctx = this;
         mProgressDialog = new ProgressDialog(this);
-
-
+        super.onCreate(savedInstanceState);
     }
+
 
     public float getPxThatMeanDp(){
         Resources resources = this.getResources();
